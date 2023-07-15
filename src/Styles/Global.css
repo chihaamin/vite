@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Poppins:wght@100&display=swap');
+
+:root {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(241, 241, 241, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  outline: none;
+}
+*{
+  outline: none;
+}
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  padding-top: 60px; /* Adjust this value to match the height of the navbar */
+  background-color: #242424;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+}
+
+.navbar-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 10px;
+  justify-content: space-around;
+}
+.navbar-container a {
+  color: white;
+  font-weight: bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.2em;
+  border: 1px solid transparent;
+  transition: color 0.15s ease-in-out;
+}
+.navbar-container a:hover {
+      color: #646cff;
+      
+      cursor: pointer;
+}
+
+.navbar-container form {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-container input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  margin-right: 10px;
+  width: 200px;
+  font-size: 1em;
+  background-color: #292929;
+  color: #eee;
+  transition: border-color 0.25s ease-in-out;
+}
+
+.navbar-container input:hover,
+.navbar-container input:focus {
+  border-color: #646cff;
+}
+
+.navbar-container input:hover {
+  background-color: #1a1a1a;
+}
+
+.navbar-container button {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #555;
+  color: white;
+  font-size: 1em;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.navbar-container button:hover {
+  background-color: #1a1a1a;
+  border-color: #646cff;
+  cursor: pointer;
+}
+
+.FileUploader {
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+}
+
+.Drop-Container {
+  display: grid;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dropzone {
+  border-radius: 50px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #292929;
+  transition: border-color 0.25s;
+}
+
+.dropzone:hover {
+  border-color: #646cff;
+  cursor: pointer;
+}
+
+.dropzone p {
+  font-family: 'Baloo 2', cursive;
+  margin: 0;
+}
+
+
+.FileUploader button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #292929;
+  color: #eee;
+  font-size: 1em;
+  transition: background-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.FileUploader button:hover {
+  background-color: #1a1a1a;
+  border-color: #646cff;
+  cursor: pointer;
+}
+.FileUploader button:disabled{
+  background-color: #292929;
+  border-color: #ff6464;
+  cursor: not-allowed;
+}
+.search-container{
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 0;
+ 
+}
+.Engine-container{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+
+}
+.EngineUpdate{
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #292929;
+  transition: border-color 0.3s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+ 
+}
+.EngineUpdate:hover,.EngineUpdate:focus , .EngineUpdate:active{
+  border: 1px solid #646cff;
+  background-color: #1a1a1a;
+  cursor: pointer;
+}
+
+
+.search-bar{
+  flex-grow: 1;
+  position: relative;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #292929;
+  transition: border-color 0.3s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+.search-bar:hover,
+.search-bar:focus {
+  border-color: #646cff;
+  background-color: #1a1a1a;
+}
+.Selected-apk img{
+  width: 75px;
+  border-radius: 15px;
+}
+.Selected-apk{
+  display: flex;
+  justify-content: space-around;
+  align-items:center ;
+  padding: 20px;
+  margin: 3px;
+  background-color: #292929;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  gap: 1rem;
+  
+}
+.result-container{
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 0;
+  border-top: 5px solid #646cff;
+  border-bottom: 5px solid #646cff;
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+  justify-content: space-between;
+}
+.search-result img{
+width: 75px;
+border-radius: 15px;
+}
+.search-result{
+  display: inline-flex;
+  gap: 2rem;
+  padding: 10px;
+  background-color: #292929;
+  border: 1px solid transparent;
+  justify-content: space-between;
+}
+.search-result:hover{
+  background-color: #1a1a1a;
+}
+
+
+
+
+.DataSet-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.AppsData-container {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  outline: none;
+  padding: 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #292929;
+  justify-content: space-between;
+  align-items:self-start;
+  transition: box-shadow 0.25s ease-in-out;
+  transition: border-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+}
+.AppsData-container:hover,.AppsData-container:focus{
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.4);
+  border-color: #949494b9;
+  background-color: #63636352;
+
+}
+
+.AppsData-container img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 15%;
+  margin: 5px;
+  float: left;
+}
+
+.AppsData-container p {
+  font-size: 14px;
+  color: #dddddd;
+  margin-bottom: 10px;
+}
+
+.AppsData-container h3 {
+  font-size: 20px;
+}
+
+
+
+.AppsData-container button {
+
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #888;
+  color: #1b1b1b;
+  transition: background-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.AppsData-container button:hover {
+  background-color: #1b1b1b;
+  color: #888;
+  cursor: pointer;
+}
